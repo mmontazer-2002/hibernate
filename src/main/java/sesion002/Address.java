@@ -1,11 +1,20 @@
 package sesion002;
 
-import javax.persistence.OneToOne;
+import lombok.Data;
+
+import javax.persistence.*;
 
 /**
  * Created by Mahdie Montazeralzohoor on 1/11/2022 7:57 PM
  */
+@Data
+@Entity
 public class Address {
-    @OneToOne
-    private String address;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+     private String address;
+
+
+
 }
