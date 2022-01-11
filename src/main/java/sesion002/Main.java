@@ -24,5 +24,6 @@ public class Main {
         session.getTransaction().commit();
         session.close();
         sessionFactory.close();
+        System.out.println(hello);
     }
 }
